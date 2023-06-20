@@ -326,8 +326,8 @@ class AvatarChoice(DirectButton):
         """
         cleanupDialog("globalDialog")
         messenger.send(self.doneEvent, ["chose", self.position])
-        UserFunnel.loggingAvID('write', str(self.avForLogging))
-        UserFunnel.logSubmit(0, 'AvatarChoice')
+        #UserFunnel.loggingAvID('write', str(self.avForLogging))
+        #UserFunnel.logSubmit(0, 'AvatarChoice')
 
     def __handleCreate(self):
         """

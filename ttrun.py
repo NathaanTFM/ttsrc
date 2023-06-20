@@ -67,9 +67,9 @@ if __name__ == "__main__":
 
     from pandac.PandaModules import VirtualFileSystem, Filename, loadPrcFileData
     vfs = VirtualFileSystem.getGlobalPtr()
-    vfs.mount(Filename("resources"), '.', 0)
-    for phase in [3,3.5,4,5,5.5,6,7,8,9,10,11,12,13]:
-        vfs.mount(Filename("resources", "phase_" + str(phase) + ".mf"), '.', VirtualFileSystem.MFReadOnly)
+    vfs.mount(Filename("resources"), '.', VirtualFileSystem.MFReadOnly)
+    #for phase in [3,3.5,4,5,5.5,6,7,8,9,10,11,12,13]:
+        #vfs.mount(Filename("resources", "phase_" + str(phase) + ".mf"), '.', VirtualFileSystem.MFReadOnly)
     
     import traceback
     try:

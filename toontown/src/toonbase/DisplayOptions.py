@@ -42,10 +42,10 @@ class DisplayOptions:
         if res == None:
             res = (800,600)
 
-        loadPrcFileData("toonBase Settings Window Res", ("win-size %s %s" % (res[0], res[1])))
-        self.notify.debug("settings resolution = %s" % str(res))
-        loadPrcFileData("toonBase Settings Window FullScreen", ("fullscreen %s" % (mode)))
-        self.notify.debug("settings full screen mode=%s" % str(mode))        
+        #loadPrcFileData("toonBase Settings Window Res", ("win-size %s %s" % (res[0], res[1])))
+        #self.notify.debug("settings resolution = %s" % str(res))
+        #loadPrcFileData("toonBase Settings Window FullScreen", ("fullscreen %s" % (mode)))
+        #self.notify.debug("settings full screen mode=%s" % str(mode))        
         loadPrcFileData("toonBase Settings Music Active", ("audio-music-active %s" % (music)))
         loadPrcFileData("toonBase Settings Sound Active", ("audio-sfx-active %s" % (sfx)))
         loadPrcFileData("toonBase Settings Music Volume", ("audio-master-music-volume %s" % (musicVol)))

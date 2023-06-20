@@ -44,7 +44,7 @@ text-never-break-before ,.-:?!;。？！、
 early-random-seed 1
 verify-ssl 0
 http-preapproved-server-certificate-filename ttown4.online.disney.com:46667 gameserver.txt
-#ssl-cipher-list RC4-MD5
+ssl-cipher-list RC4-MD5
 paranoid-clock 1
 lock-to-one-cpu 1
 collect-tcp 1
@@ -137,7 +137,7 @@ server-type prod
 color-bits 8 8 8
 alpha-bits 8
 default-server-constants 1
-fake-blue test
+fake-blue win
 game-server 127.0.0.1
 want-magic-words 1
 

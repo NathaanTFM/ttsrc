@@ -44,8 +44,8 @@ class ToonBase(OTPBase.OTPBase):
             if res == None:
                 res = (800,600)
             
-            loadPrcFileData("toonBase Settings Window Res", ("win-size %s %s" % (res[0], res[1])))
-            loadPrcFileData("toonBase Settings Window FullScreen", ("fullscreen %s" % (mode)))
+            #loadPrcFileData("toonBase Settings Window Res", ("win-size %s %s" % (res[0], res[1])))
+            #loadPrcFileData("toonBase Settings Window FullScreen", ("fullscreen %s" % (mode)))
             loadPrcFileData("toonBase Settings Music Active", ("audio-music-active %s" % (music)))
             loadPrcFileData("toonBase Settings Sound Active", ("audio-sfx-active %s" % (sfx)))
             loadPrcFileData("toonBase Settings Music Volume", ("audio-master-music-volume %s" % (musicVol)))
@@ -471,7 +471,7 @@ class ToonBase(OTPBase.OTPBase):
             url = URLSpec(name, 1)
             # Insist on a secure (SSL-wrapped) connection, regardless
             # of what was requested.
-            url.setScheme('s')
+            url.setScheme('')
             if not url.hasPort():
                 url.setPort(serverPort)
             serverList.append(url)

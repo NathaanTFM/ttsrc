@@ -316,9 +316,9 @@ enable_line_smooth(bool val) {
     _state_mask.clear_bit(TransparencyAttrib::get_class_slot());
     _line_smooth_enabled = val;
     if (val) {
-      GLP(Enable)(GL_LINE_SMOOTH);
+      //GLP(Enable)(GL_LINE_SMOOTH);
     } else {
-      GLP(Disable)(GL_LINE_SMOOTH);
+      //GLP(Disable)(GL_LINE_SMOOTH);
     }
   }
 #endif
@@ -336,9 +336,9 @@ enable_point_smooth(bool val) {
     _state_mask.clear_bit(TransparencyAttrib::get_class_slot());
     _point_smooth_enabled = val;
     if (val) {
-      GLP(Enable)(GL_POINT_SMOOTH);
+      //GLP(Enable)(GL_POINT_SMOOTH);
     } else {
-      GLP(Disable)(GL_POINT_SMOOTH);
+      //GLP(Disable)(GL_POINT_SMOOTH);
     }
   }
 #endif
@@ -355,9 +355,9 @@ enable_polygon_smooth(bool val) {
   if (_polygon_smooth_enabled != val) {
     _polygon_smooth_enabled = val;
     if (val) {
-      GLP(Enable)(GL_POLYGON_SMOOTH);
+      //GLP(Enable)(GL_POLYGON_SMOOTH);
     } else {
-      GLP(Disable)(GL_POLYGON_SMOOTH);
+      //GLP(Disable)(GL_POLYGON_SMOOTH);
     }
   }
 #endif  // OPENGLES

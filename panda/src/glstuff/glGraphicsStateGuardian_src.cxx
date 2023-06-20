@@ -1492,10 +1492,10 @@ reset() {
   // compliant w.r.t. initial settings).
   GLP(FrontFace)(GL_CCW);
 #ifndef OPENGLES_2
-  GLP(Disable)(GL_LINE_SMOOTH);
-  GLP(Disable)(GL_POINT_SMOOTH);
+  //GLP(Disable)(GL_LINE_SMOOTH);
+  //GLP(Disable)(GL_POINT_SMOOTH);
 #ifndef OPENGLES
-  GLP(Disable)(GL_POLYGON_SMOOTH);
+  //GLP(Disable)(GL_POLYGON_SMOOTH);
 #endif  // OPENGLES
 
   if (_supports_multisample) {
@@ -4444,26 +4444,26 @@ do_issue_antialias() {
 #ifndef OPENGLES_2
   switch (target_antialias->get_mode_quality()) {
   case AntialiasAttrib::M_faster:
-    GLP(Hint)(GL_LINE_SMOOTH_HINT, GL_FASTEST);
-    GLP(Hint)(GL_POINT_SMOOTH_HINT, GL_FASTEST);
+    //GLP(Hint)(GL_LINE_SMOOTH_HINT, GL_FASTEST);
+    //GLP(Hint)(GL_POINT_SMOOTH_HINT, GL_FASTEST);
 #ifndef OPENGLES
-    GLP(Hint)(GL_POLYGON_SMOOTH_HINT, GL_FASTEST);
+    //GLP(Hint)(GL_POLYGON_SMOOTH_HINT, GL_FASTEST);
 #endif  // OPENGLES
     break;
 
   case AntialiasAttrib::M_better:
-    GLP(Hint)(GL_LINE_SMOOTH_HINT, GL_NICEST);
-    GLP(Hint)(GL_POINT_SMOOTH_HINT, GL_NICEST);
+    //GLP(Hint)(GL_LINE_SMOOTH_HINT, GL_NICEST);
+    //GLP(Hint)(GL_POINT_SMOOTH_HINT, GL_NICEST);
 #ifndef OPENGLES
-    GLP(Hint)(GL_POLYGON_SMOOTH_HINT, GL_NICEST);
+    //GLP(Hint)(GL_POLYGON_SMOOTH_HINT, GL_NICEST);
 #endif  // OPENGLES
     break;
 
   default:
-    GLP(Hint)(GL_LINE_SMOOTH_HINT, GL_DONT_CARE);
-    GLP(Hint)(GL_POINT_SMOOTH_HINT, GL_DONT_CARE);
+    //GLP(Hint)(GL_LINE_SMOOTH_HINT, GL_DONT_CARE);
+    //GLP(Hint)(GL_POINT_SMOOTH_HINT, GL_DONT_CARE);
 #ifndef OPENGLES
-    GLP(Hint)(GL_POLYGON_SMOOTH_HINT, GL_DONT_CARE);
+    //GLP(Hint)(GL_POLYGON_SMOOTH_HINT, GL_DONT_CARE);
 #endif  // OPENGLES
     break;
   }
@@ -6653,10 +6653,10 @@ print_gfx_visual() {
 
   GLP(GetBooleanv)( GL_BLEND, &j ); cout << "Blend? " << (int)j << endl;
 #ifndef OPENGLES_2
-  GLP(GetBooleanv)( GL_POINT_SMOOTH, &j ); cout << "Point Smooth? "
-                                                << (int)j << endl;
-  GLP(GetBooleanv)( GL_LINE_SMOOTH, &j ); cout << "Line Smooth? "
-                                               << (int)j << endl;
+  //GLP(GetBooleanv)( GL_POINT_SMOOTH, &j ); cout << "Point Smooth? "
+  //                                              << (int)j << endl;
+  //GLP(GetBooleanv)( GL_LINE_SMOOTH, &j ); cout << "Line Smooth? "
+  //                                             << (int)j << endl;
 #endif
 
 #ifndef OPENGLES

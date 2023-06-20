@@ -91,7 +91,7 @@ import types
 # Original bootstrap logger that gets LOGGING IMMEDIATELY UP before any
 # Panda/Toontown dependencies are imported
 #
-if 1:   # flip this as necessary
+if 0:   # flip this as necessary
     # Setup the log files
     # We want C++ and Python to both go to the same log so they
     # will be interlaced properly.
